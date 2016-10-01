@@ -13,3 +13,10 @@ a.active {
 nav {
     padding-top: 20px;
 }
+
+.home-page {
+    height: 175px;
+    width: 300px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
