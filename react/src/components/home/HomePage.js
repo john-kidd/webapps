@@ -1,13 +1,51 @@
 import React from 'react';
 import {Link} from 'react-router';
+import homeTopLeft from '../../images/home_bottom_left.jpg';
+import homeTopRight from '../../images/home_top_right.JPG';
 
 class HomePage extends React.Component {
     render() {
-        return <div className="jumbotron">
-            <h1>Vals Home Services</h1>
-            <p>Some stuff goes here...</p>
-            <Link to="about" className="btn btn-primary btn-lg">Learn more about us</Link>
-        </div>
+        return (
+            <div>
+                <h2>Val Home Services</h2>
+                <p>We offer a variety of services and are fully insured for the work we carry out.</p>
+                <br/>
+                <div className="row">
+                    <div className="col-md-7">
+                        <p>Our internal and external services:</p>
+                        <ul>
+                            <li>Painting fascia and soffits</li>
+                            <li>Internal painting</li>
+                            <li>External painting</li>
+                            <li>Plastering</li>
+                            <li>Plaster boards</li>
+                            <li>Decorating</li>
+                            <li>Patio cleaning</li>
+                        </ul>
+                    </div>
+                    <div className="col-md-5">
+                        <img src={homeTopLeft} className="home-page" />
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div className="row">
+                    <div className="col-md-7">
+                        <p>Our gutter services:</p>
+                        <li>Clean and repair your gutters</li>
+                        <li>Clean your fascia and soffits</li>
+                        <li>Install new fascia and soffits</li>
+                        <li>Install gutter guards</li>
+                        <li>All types of roof cleaning (conservatory, house, garage, flat roofs...)</li>
+                    </div>
+                    <div className="col-md-5">
+                        <img src={homeTopRight}  className="home-page" />
+                    </div>
+                </div>
+                <br/>
+                <Link to="about" className="btn btn-primary btn-md">Learn more about us</Link>
+            </div>
+        );
     }
 }
 
