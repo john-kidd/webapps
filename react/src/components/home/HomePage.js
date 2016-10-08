@@ -1,10 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router';
-import homeTopLeft from '../../images/home_bottom_left.jpg';
-import homeTopRight from '../../images/home_top_right.JPG';
 
 class HomePage extends React.Component {
     render() {
+        const top = require('../../images/home_top_right.jpg');
+        const bottom = require('../../images/home_bottom_left.jpg');
+
         return (
             <div>
                 <h2>Val Home Services</h2>
@@ -24,7 +25,7 @@ class HomePage extends React.Component {
                         </ul>
                     </div>
                     <div className="col-md-5">
-                        <img src={homeTopLeft} className="home-page" />
+                        <img src={top} className="home-page" />
                     </div>
                 </div>
                 <br/>
@@ -39,7 +40,7 @@ class HomePage extends React.Component {
                         <li>All types of roof cleaning (conservatory, house, garage, flat roofs...)</li>
                     </div>
                     <div className="col-md-5">
-                        <img src={homeTopRight}  className="home-page" />
+                        <img src={bottom}  className="home-page" />
                     </div>
                 </div>
                 <br/>
@@ -49,4 +50,5 @@ class HomePage extends React.Component {
     }
 }
 
+        const top = require('../../images/home_bottom_left.jpg');
 export default HomePage;
