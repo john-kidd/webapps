@@ -10,7 +10,7 @@ class AboutPage extends React.Component {
                     <h1>About Us</h1>
                 </section>
                 <section className="col-md-6">
-                    <h3>Who Are We ?</h3>
+                    <h4>Who Are We ?</h4>
                     <div className="element-padding">
                         At Val Home Service, we are focused on providing the best services with the highest 
                         levels of customer satisfaction – we will do everything we can to meet your <br/>expectations.
@@ -20,7 +20,7 @@ class AboutPage extends React.Component {
                     <Link className="col-md-12" to="contact" className="btn btn-primary btn-md">Feel free to contact us</Link> 
                 </section>
                 <section className="col-md-6">
-                    <h3>Why Us?</h3>
+                    <h4>Why Us?</h4>
                     Choose a reliable service.
                     We will make sure that the work is done properly and efficiently.
                     We offer a variety of services and are fully insured for the work we carry out.
