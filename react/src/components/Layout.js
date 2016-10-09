@@ -3,11 +3,13 @@ import Header from './common/Header';
 
 class Layout extends React.Component {
     render() {
-        return <div className="container-fluid">
-            <Header />
-            <br/>
-            {this.props.children}
-        </div>
+        return (
+            <div className="container-fluid">
+                <Header />
+                <br/>
+                {this.props.children}
+            </div>
+        );
     }
 }
 
