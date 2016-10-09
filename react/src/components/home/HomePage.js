@@ -25,7 +25,7 @@ class HomePage extends React.Component {
                         </ul>
                     </div>
                     <div className="col-md-5">
-                        <img src={top} className="home-page" />
+                        <img src={top} className="thumbnail picture" />
                     </div>
                 </div>
                 <br/>
@@ -40,19 +40,14 @@ class HomePage extends React.Component {
                         <li>All types of roof cleaning (conservatory, house, garage, flat roofs...)</li>
                     </div>
                     <div className="col-md-5">
-                        <img src={bottom}  className="home-page" />
+                        <img src={bottom}  className="thumbnail picture" />
                     </div>
                 </div>
                 <br/>
-                <Link to="about" className="btn btn-primary btn-md">Learn more about us</Link>
+                    
             </div>
         );
     }
 }
 
-        const top = require('../../images/home_bottom_left.jpg');
-<<<<<<< HEAD
 export default HomePage;
-=======
-export default HomePage;
->>>>>>> react
