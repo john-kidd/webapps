@@ -51,4 +51,8 @@ class HomePage extends React.Component {
 }
 
         const top = require('../../images/home_bottom_left.jpg');
+<<<<<<< HEAD
 export default HomePage;
+=======
+export default HomePage;
+>>>>>>> react
