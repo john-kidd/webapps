@@ -1,8 +1,8 @@
 import React from 'react';
 
-class ListItemWrapper extends React.Component {
+class Row extends React.Component {    
   render() {
-    return <div className="row">
+    return (<div className="row">
         <div className="col-md-3">
             <img src={this.props.pictures[0].src} className="thumbnail picture" />
             <h5>{this.props.pictures[0].title}</h5>
@@ -23,17 +23,12 @@ class ListItemWrapper extends React.Component {
             <h5>{this.props.pictures[3].title}</h5>
             <h6>{this.props.pictures[3].subTitle}</h6>
         </div>
-    </div>;
-  }
+    </div>);
+  }  
 }
 
-export default React.createClass({
-    render: function() {
-        const gallery = this.props.gallery.map((pictures, index) => {
-            return (
-                <ListItemWrapper key={index} pictures={pictures} />
-            );
-        });
-        return <div>{gallery}</div>;
-    }
-});
+Row.propTypes = {
+    pictures: React.PropTypes.array
+};
+
+export default Row;

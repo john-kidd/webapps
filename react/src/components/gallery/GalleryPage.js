@@ -1,5 +1,5 @@
 import React from 'react';
-import Picture from './Picture';
+import Pictures from './Pictures';
 
 class GalleryPage extends React.Component {
   render() {
@@ -72,11 +72,11 @@ class GalleryPage extends React.Component {
         ]            
     ];   
     return (
-            <div>
-                <h2 className="row col-md-12">Gallery</h2>
-                <h5>Please view the variety and standard of the service we provide</h5>
-                <Picture gallery={gallery} />
-            </div>
+        <div>
+            <h2 className="row col-md-12">Gallery</h2>
+            <h5>Please view the variety and standard of the service we provide</h5>
+            <Pictures gallery={gallery} />
+        </div>
         );
     }
 }
