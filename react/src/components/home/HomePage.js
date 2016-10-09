@@ -13,7 +13,7 @@ class HomePage extends React.Component {
                 <br/>
                 <div className="row">
                     <div className="col-md-7">
-                        <p>Our internal and external services:</p>
+                        <h4>Our internal and external services:</h4>
                         <ul>
                             <li>Painting fascia and soffits</li>
                             <li>Internal painting</li>
@@ -32,7 +32,7 @@ class HomePage extends React.Component {
                 <br/>
                 <div className="row">
                     <div className="col-md-7">
-                        <p>Our gutter services:</p>
+                        <h4>Our gutter services:</h4>
                         <li>Clean and repair your gutters</li>
                         <li>Clean your fascia and soffits</li>
                         <li>Install new fascia and soffits</li>
