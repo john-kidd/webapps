@@ -1,0 +1,29 @@
+{
+    "pageTitle": "Welcome to Val Home Service",
+    "sections": [
+        {
+            "heading": "Our internal and external services:",
+            "items": [
+                "Painting fascia and soffits",
+                "Internal painting",
+                "External painting",
+                "Plastering",
+                "Plaster boards",
+                "Decorating",
+                "Patio cleaning"
+            ],
+            "imageUrl": "images/home_top_right.jpg"
+        },
+        {
+            "heading": "Our gutter services:",
+            "items": [
+                "Clean and repair your gutters",
+                "Clean your fascia and soffits",
+                "Install new fascia and soffits",
+                "Install gutter guards",
+                "All types of roof cleaning (conservatory, house, garage, flat roofs...)"
+            ],
+            "imageUrl": "images/home_bottom_left.jpg"
+        }    
+    ]
+}

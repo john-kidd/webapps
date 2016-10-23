@@ -1,41 +1,15 @@
-<div>
-    <h2>Val Home Services</h2>
+<div *ngIf="data">
+    <h2>{{data.pageTitle}}</h2>
     <p>We offer a variety of services and are fully insured for the work we carry out.</p>
-    <br/>
-    <div class="row">
+    <div *ngFor="let section of data.sections" class="row">
         <div class="col-md-7">
-            <h4>Our internal and external services:</h4>
+            <h4>{{section.heading}}</h4>
             <ul>
-                <li>Painting fascia and soffits</li>
-                <li>Internal painting</li>
-                <li>External painting</li>
-                <li>Plastering</li>
-                <li>Plaster boards</li>
-                <li>Decorating</li>
-                <li>Patio cleaning</li>
+                <li *ngFor="let item of section.items">{{item}}</li>
             </ul>
         </div>
         <div class="col-md-5">
-            <img src='images/home_top_right.jpg' class="thumbnail picture" />
+            <img src='{{section.imageUrl}}' class="thumbnail picture" />
         </div>
     </div>
-    <br/>
-    <br/>
-    <div class="row">            
-        <div class="col-md-7">
-            <h4>Our gutter services:</h4>
-            <ul>
-                <li>Clean and repair your gutters</li>
-                <li>Clean your fascia and soffits</li>
-                <li>Install new fascia and soffits</li>
-                <li>Install gutter guards</li>
-                <li>All types of roof cleaning (conservatory, house, garage, flat roofs...)</li>
-            </ul>
-        </div>
-        <div class="col-md-5">
-            <img src='images/home_bottom_left.jpg' class="thumbnail picture" />
-        </div>
-    </div>
-    <br/>
-        
 </div>

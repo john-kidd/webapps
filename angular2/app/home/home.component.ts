@@ -1,8 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
+import {Observable} from 'rxjs/Rx';
+
+import { HomeService } from './home.service';
+import { Home } from './home';
 
 @Component({
     templateUrl: 'app/home/home.component.html'
 })
-export class HomeComponent { 
-    pageTitle: string = "Welcome to Val Home Service";
+export class HomeComponent implements OnInit {
+    data: Home;
+    error: string;
+
+    constructor(private homeService: HomeService) {}
+
+    ngOnInit() {
+        return this.homeService.getData()
+                        .subscribe(
+                            data => this.data = data,
+                            error => this.error = error);
+        
+    }
 }
