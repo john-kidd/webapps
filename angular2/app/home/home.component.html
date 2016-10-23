@@ -2,14 +2,14 @@
     <h2>{{data.pageTitle}}</h2>
     <p>We offer a variety of services and are fully insured for the work we carry out.</p>
     <div *ngFor="let section of data.sections" class="row">
-        <div class="col-md-7">
+        <div class="col-md-12">
             <h4>{{section.heading}}</h4>
             <ul>
                 <li *ngFor="let item of section.items">{{item}}</li>
             </ul>
         </div>
-        <div class="col-md-5">
-            <img src='{{section.imageUrl}}' class="thumbnail picture" />
+        <div class="col-md-12">
+            <img src='{{section.imageUrl}}' class="thumbnail picture" style="height:200px; width: 300px;" />
         </div>
     </div>
 </div>
