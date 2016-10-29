@@ -1,0 +1,58 @@
+<h2 class="col-md-12">{{pageTitle}}</h2>
+<section class="col-md-5">
+    <h4>Please get in touch for a free quote!</h4>
+    <div>Interested in our services?  Get in touch with us via the form below and we'll get back to you as soon as possible.</div>
+    <br/>
+    <form 
+        class="col-md-12">
+        <div class="form-group">
+            <label htmlFor="name">Name:</label>
+            <input 
+                name="name"
+                type="text"
+                (change)="propertyDidChange()"
+                [(ngModel)]="name" 
+                class="form-control" 
+                id="name"/>
+        </div>
+        <div class="form-group">
+            <label htmlFor="body">Message:</label>
+            <textarea 
+                name="message"
+                type="body" 
+                class="form-control" 
+                id="body" 
+                rows="10"
+                cols="30"
+                (change)="propertyDidChange()"
+                [(ngModel)]="message" >
+            </textarea>
+        </div>
+        <br/>
+        <a 
+            href="{{email}}" 
+            class="btn btn-primary btn-md">
+            Request a Quote
+        </a>
+    </form>
+</section>
+<section class="col-md-7">
+    <h4 class="info-section">Contact Information</h4>
+    <div class="info-section">
+        <br/><strong>Val Home Services</strong> 
+        <br/>Phone: 07751 159465
+        <br/>Email: valhomeservice@gmail.com
+        
+        <br/><br/><strong>Opening Hours</strong>
+        <br/>Mon-Fri: 9-5pm
+        <br/>Sat: 10-4pm
+        <br/>Sun: Closed
+        
+        <br/><br/><strong>Out of Hours</strong>
+        <br/>Phone: 07713 758164
+
+        <br/><br/><strong>Address</strong>
+        <br/>St. Albans,
+        <br/>Hertfordshire
+    </div>
+</section>

@@ -1,0 +1,11 @@
+<div>
+    <h2 class="row col-md-12">{{pageTitle}}</h2>
+    <h5>Please view the variety and standard of the service we provide</h5>
+    <div *ngFor="let pictures of data" class="row">
+        <div *ngFor="let picture of pictures" class="col-md-3">
+            <img src={{picture.src}} class="thumbnail picture" />
+            <h5>{{picture.title}}</h5>
+            <h6>{{picture.subtitle}}</h6>
+        </div>            
+    </div>
+</div>

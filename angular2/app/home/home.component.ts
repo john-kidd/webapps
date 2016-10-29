@@ -8,10 +8,13 @@ import { Home } from './home';
     templateUrl: 'app/home/home.component.html'
 })
 export class HomeComponent implements OnInit {
+    pageTitle: string = 'Val Home Service';
     data: Home;
     error: string;
 
-    constructor(private homeService: HomeService) {}
+    constructor(private homeService: HomeService) {
+
+    }
 
     ngOnInit() {
         return this.homeService.getData()
