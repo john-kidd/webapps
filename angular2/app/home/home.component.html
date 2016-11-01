@@ -1,9 +1,8 @@
 <div *ngIf="data">
-    <h2>{{pageTitle}}</h2>
-    <p>We offer a variety of services and are fully insured for the work we carry out.</p>
+    <h4>We offer a variety of services and are fully insured for the work we carry out.</h4>
     <div *ngFor="let section of data.sections" class="row">
         <div class="col-md-4">
-            <h4>{{section.heading}}</h4>
+            <h5>{{section.heading}}</h5>
             <ul>
                 <li *ngFor="let item of section.items">{{item}}</li>
             </ul>
