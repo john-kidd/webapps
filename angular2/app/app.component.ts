@@ -13,17 +13,25 @@ import { Component } from '@angular/core';
         <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
           <div class="container">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" (click)="openNav()">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                 </button>
-                <h4 class="navbar-text">
+                <h4 class="navbar-text navbar-toggle" data-toggle="collapse" >
                    Val Home Service&nbsp;&nbsp;&nbsp;  
                 </h4>
             </div>
-            <div class="collapse navbar-collapse" id="navigationbar">
+            <div id="mySidenav" class="sidenav" [style.width]="sideNavWith" style="cursor:pointer">
+              <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+              <a routerLink="/">Home</a>
+              <a routerLink="/reviews">Reviews</a>
+              <a routerLink="/gallery">Gallery</a>
+              <a routerLink="/contact">Contact Us</a>
+              <a routerLink="/about">About Us</a>
+            </div>
+            <div id="main" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                   <li><a routerLink="/" routerLinkActive="active" class="navbar-brand">Home</a></li>
                   <li><a routerLink="/reviews" routerLinkActive="active" class="navbar-brand">Reviews</a></li>
@@ -35,7 +43,7 @@ import { Component } from '@angular/core';
           </div>
         </div>
 
-        <div class="container" style="margin-top: 50px;">
+        <div class="container" style="margin-top: 50px;" [style.marginLeft]="mainMarginLeft">
             <router-outlet></router-outlet>
         </div>  
 
@@ -60,5 +68,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   year: number = new Date().getFullYear();
+  sideNavWith: string;
+  mainMarginLeft: string;
 
+  constructor() {
+    
+  }
+
+  openNav(): void {
+    this.sideNavWith = "250px";
+    this.mainMarginLeft = "250px";
+  }
+
+  closeNav(): void {
+    this.sideNavWith = "0";
+    this.mainMarginLeft = "";
+  }
 }
